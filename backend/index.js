@@ -1,11 +1,11 @@
 import express from "express";
 import { PORT, mongoDB } from "./config.js";
 import mongoose from "mongoose";
+import { Book } from "./models/bookModel.js";
 
 const app = express();
 
 app.get("/", (req, res) => {
-  console.log(req);
   res.status(200).send("Hello World!");
 });
 
